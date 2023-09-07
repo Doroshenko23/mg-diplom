@@ -26,7 +26,7 @@
 }
 
 .header {
-  background-image: url("images/banner-bg.jpg");
+  background-image: url("./images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -116,16 +116,13 @@
   flex-wrap: wrap;
 }
 
-.menu-list-item:nth-child(n + 2) {
-  margin-left: 35px;
-}
-
 .menu-link {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.8125em;
   font-weight: 400;
   color: #ffffff;
+  margin-right: 35px;
 }
 
 .menu-link:hover {
@@ -250,16 +247,13 @@
   flex-wrap: wrap;
 }
 
-.trend-list-item:nth-child(n + 2) {
-  margin-left: 20px;
-}
-
 .trend-link {
   font-size: 0.875em;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   color: #b59f5b;
+  margin-right: 20px;
 }
 
 .trend-link:hover {
@@ -296,16 +290,13 @@
 
 .news {
   display: flex;
-  margin-top: 59px;
   margin-right: 122px;
-}
-
-.news:nth-child(n + 2) {
-  margin-top: 61px;
+  
 }
 
 .card {
   display: flex;
+  margin-top: 50px;
 }
 
 .card-photo {
@@ -323,16 +314,13 @@
   padding-bottom: 7px;
 }
 
-.card-list-item:nth-child(n + 2) {
-  margin-left: 20px;
-}
-
 .card-link {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.8125em;
   font-weight: bold;
   color: #b59f5b;
+  margin-right: 20px;
 }
 
 .card-link:hover {
@@ -391,7 +379,7 @@
 }
 
 .new-post {
-  margin-top: 59px;
+  margin-top: 60px;
 }
 
 .isade-title {
@@ -415,9 +403,6 @@
 .new-posts {
   display: flex;
   width: 100%;
-}
-
-.new-posts:nth-child(n + 1) {
   margin-top: 20px;
 }
 
@@ -564,6 +549,8 @@
 .tags-list-item {
   border: 2px solid #eeeeee; 
   padding: 6px 12px;
+  margin-right: 10px;
+  margin-top: 6px;
 }
 
 .tags-list-item:hover {
@@ -572,15 +559,6 @@
 
 .tags-list-item:active {
   border: 3px solid #b59f5b;
-}
-
-.tags-list-item:nth-child(3n + 2) {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.tags-list-item:nth-child(n + 4) {
-  margin-top: 6px;
 }
 
 .tags-link {
@@ -663,7 +641,8 @@
 .products-conteiner {
   display: flex;
   margin-top: 30px;
-  column-gap: 75px ;
+  column-gap: 75px;
+ 
 }
 
 .products-item {
@@ -780,9 +759,6 @@
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.footer-list-item:nth-child(n + 2) {
   margin-left: 25px;
 }
 
@@ -882,10 +858,6 @@
     margin-right: 40px;
   }
 
-  .news:nth-child(n + 2) {
-    margin-top: 42px;
-  }
-
   .card {
     display: flex;
     flex-direction: column;
@@ -920,13 +892,22 @@
     margin-top: 50px;
   } 
 
-  .products {      /*  a d d i t i o n a l     s e c t i o n   */
+  .tags-list-item {
+    padding: 3px 12px;
+  }
+
+               /*  a d d i t i o n a l     s e c t i o n   */
+  .products {     
     width: 100%;
     padding: 0 36px;
   }   
 
   .products-our {
-    margin-top: 45px;
+    margin-top: 40px;
+  }
+
+  .products-title {
+     font-size: 1em;
   }
 
   .products-conteiner {
@@ -964,6 +945,7 @@
     display: block;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-right: 10px;
   }
 
   .footer-address {
@@ -1054,17 +1036,12 @@
 
 .news-content {
   flex-direction: column;
-   
 }
+
 .news {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-}
-
-.news:nth-child(n + 2) {
-  margin-top: 36px;
 }
 
 .card {
@@ -1110,15 +1087,11 @@
 }
 
 .new-post {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .isade-title {
   font-size: 1em;
-}
-
-.new-posts:nth-child(n + 1) {
-  margin-top: 20px;
 }
 
 .post-title {
@@ -1157,11 +1130,6 @@
   padding: 2px 8px;
 }
 
-.tags-list-item:nth-child(n + 1) {
-  margin-left: 2px;
-  margin-right: 2px;
-  margin-top: 6px;
-}
 /*   T O P I C S   */
 .topics {
   margin-top: 44px;
@@ -1170,8 +1138,8 @@
 .topics-list-item {
   padding-top: 9px;
   padding-bottom: 14px;
- 
 }
+
                     /*  a d d i t i o n a l     s e c t i o n   */
 .products {
   width: 100%;
@@ -1225,10 +1193,6 @@
   padding-bottom: 32px;
 }
 
-.footer-list-item:nth-child(n + 2) {
-  margin-left: 30px;
-}
-
 .footer-address {
   margin-top: 51px;
   color: #dddddd;
@@ -1247,13 +1211,10 @@
   .content-item {
     padding: 20px 10px 10px;
   }
-
-  .trend-list-item:nth-child(n + 2) {
-    margin-left: 10px;
-  }
   
   .trend-link {
     font-size: 0.75em;
+    margin-right: 5px;
   }
 
   .title-content {
@@ -1395,10 +1356,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-.checkbox-group:nth-child(2n) {
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .radio-svg {
